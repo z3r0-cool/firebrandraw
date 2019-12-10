@@ -1,0 +1,36 @@
+body{
+    font-family: 'IM Fell Double Pica', serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 0px;
+} 
+
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    backface-visibility: hidden;
+    margin-bottom: 60px;
+    
+  &--main{
+      display: block;
+      font-size: 50px;
+      font-weight: 400;
+      letter-spacing: 15px;
+      animation-name: moveInLeft;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+  }
+  &--sub{
+      display: block;
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 11px;
+      text-align: center;
+      animation-name: moveInRight;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+  }
+
+}

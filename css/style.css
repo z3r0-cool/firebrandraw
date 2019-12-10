@@ -3,57 +3,8 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  font-family: 'IM Fell Double Pica', serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #777;
-  padding: 0px; }
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(198, 101, 240, 0.7), rgba(170, 20, 234, 0.7)), url(../gallylogo.jpg);
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  position: relative; }
-  .header__logo-box {
-    position: absolute;
-    top: 25px;
-    left: 30px; }
-  .header__logo {
-    height: 80px; }
-  .header__h1-box {
-    position: absolute;
-    top: 40%;
-    left: 45%;
-    transform: translate(-40%, -40%);
-    text-align: center; }
-
-.heading-primary {
-  color: #fefefe;
-  text-transform: uppercase;
-  text-align: center;
-  backface-visibility: hidden;
-  margin-bottom: 60px; }
-  .heading-primary--main {
-    display: block;
-    font-size: 50px;
-    font-weight: 400;
-    letter-spacing: 15px;
-    animation-name: moveInLeft;
-    animation-duration: 2s;
-    animation-timing-function: ease-out; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 11px;
-    text-align: center;
-    animation-name: moveInRight;
-    animation-duration: 2s;
-    animation-timing-function: ease-out; }
+html {
+  font-size: 62.5%; }
 
 @keyframes moveInLeft {
   0% {
@@ -80,8 +31,39 @@ body {
     opacity: 0;
     transform: translateY(50px); }
   100% {
-    opacity: 1;
+    opacity: 0.9;
     transform: translate(0); } }
+
+body {
+  font-family: 'IM Fell Double Pica', serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 0px; }
+
+.heading-primary {
+  color: #fefefe;
+  text-transform: uppercase;
+  text-align: center;
+  backface-visibility: hidden;
+  margin-bottom: 60px; }
+  .heading-primary--main {
+    display: block;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 15px;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 11px;
+    text-align: center;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -95,11 +77,16 @@ body {
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-delay: 2s;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: backwards;
+  font-size: 17px;
+  opacity: 0.9; }
 
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scale(1.4) scaleY(1.1);
+    opacity: 0; }
 
 .btn:active {
   transform: translateY(-1px);
@@ -108,6 +95,8 @@ body {
 .btn--white {
   background-color: #fefefe;
   color: #777; }
+  .btn--white::after {
+    background-color: #fefefe; }
 
 .btn::after {
   content: "";
@@ -121,9 +110,22 @@ body {
   z-index: -1;
   transition: all .4s; }
 
-.btn--white::after {
-  background-color: #fefefe; }
-
-.btn:hover::after {
-  transform: scale(1.4) scaleY(1.1);
-  opacity: 0; }
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(198, 101, 240, 0.7), rgba(170, 20, 234, 0.7)), url(../gallylogo.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 25px;
+    left: 30px; }
+  .header__logo {
+    height: 80px; }
+  .header__h1-box {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-40%, -40%);
+    text-align: center; }
