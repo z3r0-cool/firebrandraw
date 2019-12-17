@@ -30,6 +30,12 @@
             &-1{
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
+            &-2{
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary);
+            }
+            &-3{
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
 
 
         }
@@ -54,13 +60,13 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1{
-        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-1.jpg);
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-1.jpg);
         }
         &--2{
-
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary), url(../img/nat-1.jpg);
         }
         &--3{
-
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-1.jpg);
         }
     }
 
@@ -76,12 +82,18 @@
         width: 80%;
     }
     &__heading-span{
-        padding: .5rem 1rem;
+        padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
 
         &--1{
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+        }
+        &--2{
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary, .85));
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
         }
 
     }
@@ -113,18 +125,18 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 90%;
-        height: 40%;
+        text-align: center;
+
     }
     &__price-box {
-        font-size: 1.4rem;
         color: $color-white;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 8rem;
         
     }
     &__price-only{
         font-size: 1.4rem;
-        text-transform: upp;
+        text-transform: uppercase;
     }
     &__price-value{
         font-size: 2rem;
