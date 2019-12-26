@@ -176,6 +176,26 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0px); }
 
+.btn-text-2:link, .btn-text-2:visited {
+  font-weight: 400;
+  font-size: 2.2rem;
+  color: #7F3FBF;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #7F3FBF;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text-2:hover {
+  background-color: #7F3FBF;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text-2:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0px); }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -293,7 +313,7 @@ body {
         font-size: 1.5rem;
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
-          border-bottom: 1px solid #eee; }
+          border-bottom: 1px solid #fefefe; }
   .card__cta {
     position: absolute;
     top: 50%;
@@ -315,8 +335,8 @@ body {
 .story {
   width: 75%;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem rbga(#000, 0.1);
-  background-color: #fefefe;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(254, 254, 254, 0.6);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -360,6 +380,20 @@ body {
     filter: blur(4px);
     outline: 0 !important;
     box-shadow: 0 !important; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .25;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .row {
   max-width: 114rem;
@@ -411,9 +445,9 @@ body {
     text-align: center; }
 
 .section-about {
-  background-color: #f7f7f7;
+  background-color: #eee;
   padding: 25rem 0;
-  margin-top: -15vh; }
+  margin-top: -20vh; }
 
 .section-features {
   padding: 20rem 0;
@@ -437,10 +471,10 @@ body {
   color: #fefefe; }
 
 .catalogue {
-  background-color: #f7f7f7;
+  background-color: #eee;
   padding: 35rem 0 15rem 0;
   margin-top: -12rem; }
 
 .section-stories {
-  padding: 15rem 0;
-  background-color: #f7f7f7; }
+  position: relative;
+  padding: 15rem 0; }
